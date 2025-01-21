@@ -260,22 +260,47 @@
         font-size: 16px;
     }
 
-    .navigation {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+   .navigation {
+    display: flex;
+    justify-content: flex-start; /* Mulai dari kiri */
+    align-items: center;
+    text-transform: capitalize;
+    transform: translateX(-20px);
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    white-space: nowrap; /* Hindari elemen turun ke baris berikutnya */
+    scrollbar-width: thin; /* Gulir lebih tipis (browser yang mendukung) */
+}
 
-    .navigation > li {
-        padding: 5px;
-        transform: translateX(-30px)
-    }
+.navigation::-webkit-scrollbar {
+    height: 6px; /* Tinggi scrollbar horizontal */
+}
 
-    .navigation > li > a {
-        font-size: 14px;
-        padding: 5px;
-    }
+.navigation::-webkit-scrollbar-thumb {
+    background: aquamarine; /* Warna scrollbar */
+    border-radius: 3px; /* Sudut melengkung */
+}
+
+.navigation::-webkit-scrollbar-track {
+    background: #333; /* Warna latar scrollbar */
+}
+
+.navigation > li {
+    list-style: none;
+    padding: 15px;
+    flex-shrink: 0; /* Pastikan elemen tidak mengecil */
+}
+
+.navigation > li > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block; /* Sejajarkan elemen */
+}
+
+.navigation > li > a:hover {
+    color: aquamarine;
+    transition: all 0.3s ease;
+}
 
     .profile {
         margin-top: 50px;
@@ -322,6 +347,47 @@
         width: 150px;
         height: 150px;
     }
+.navigation {
+    display: flex;
+    justify-content: flex-start; /* Mulai dari kiri */
+    align-items: center;
+    text-transform: capitalize;
+    transform: translateX(-20px);
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    white-space: nowrap; /* Hindari elemen turun ke baris berikutnya */
+    scrollbar-width: thin; /* Gulir lebih tipis (browser yang mendukung) */
+}
+
+.navigation::-webkit-scrollbar {
+    height: 6px; /* Tinggi scrollbar horizontal */
+}
+
+.navigation::-webkit-scrollbar-thumb {
+    background: aquamarine; /* Warna scrollbar */
+    border-radius: 3px; /* Sudut melengkung */
+}
+
+.navigation::-webkit-scrollbar-track {
+    background: #333; /* Warna latar scrollbar */
+}
+
+.navigation > li {
+    list-style: none;
+    padding: 15px;
+    flex-shrink: 0; /* Pastikan elemen tidak mengecil */
+}
+
+.navigation > li > a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block; /* Sejajarkan elemen */
+}
+
+.navigation > li > a:hover {
+    color: aquamarine;
+    transition: all 0.3s ease;
+}
 
     .textBiodata > p {
         font-size: 14px;
