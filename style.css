@@ -251,24 +251,31 @@
 @media (max-width: 768px) {
     .wrapper {
         flex-direction: column;
+        align-items: center;
         height: auto;
-        padding: 10px;
     }
 
     .brand {
-        justify-content: center;
-        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
     }
 
     .navigation {
-        flex-direction: column;
-        transform: translateX(0);
-        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .navigation > li {
-        padding: 10px 0;
+        padding: 5px;
     }
+
+    .navigation > li > a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
 
     .profile {
         margin-top: 50px;
@@ -297,16 +304,19 @@
 /* Responsif untuk layar sangat kecil (di bawah 480px) */
 @media (max-width: 480px) {
     .wrapper {
-        padding: 5px;
+        padding: 5px 10px;
     }
 
-    .brand {
-        font-size: 16px;
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
     }
 
     .navigation > li > a {
-        font-size: 16px;
+        font-size: 12px;
     }
+}
 
     .profileimg {
         width: 150px;
