@@ -246,3 +246,87 @@
     max-width: 80%;
     margin: 0 auto;
 }
+
+/* Responsif untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .brand {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        transform: translateX(0);
+        text-align: center;
+    }
+
+    .navigation > li {
+        padding: 10px 0;
+    }
+
+    .profile {
+        margin-top: 50px;
+    }
+
+    .textBiodata > p {
+        width: 100%;
+        margin: 10px 0;
+        transform: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card > img {
+        height: 150px;
+    }
+
+    .containerCard {
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+
+/* Responsif untuk layar sangat kecil (di bawah 480px) */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 5px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .navigation > li > a {
+        font-size: 16px;
+    }
+
+    .profileimg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .textBiodata > p {
+        font-size: 14px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card > img {
+        height: 120px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
