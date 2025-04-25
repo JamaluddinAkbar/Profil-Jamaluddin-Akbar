@@ -199,13 +199,14 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 15px;
 }
 
 .card {
     border-radius: 10px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 225px;
     background-color: aliceblue;
     overflow: hidden;
 }
@@ -243,6 +244,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 10%;
+    margin: auto;
 }
